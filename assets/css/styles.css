@@ -1,0 +1,540 @@
+body {
+    margin: 0;
+    padding: 0 18.23vw;
+    font-family: sans-serif;
+    background-color: #121212;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: #e3e3e3;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.logoHeader {
+    font-size: 64px;
+    margin: 0;
+    margin-top: -20px;
+    color: #99C98A;
+}
+
+.titleHeader {
+    font-size: 20px;
+    margin-top: 2px;
+    color: #b4b4b4;
+}
+
+.socialLinks a {
+    font-size: 20px;
+    padding: 10px;
+    color: #F3F3F3;
+    background-color: #9B98EA;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.heroSection {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 20vh;
+
+}
+
+.heroSection img {
+    /*Profile photo*/
+
+    width: 18vw;
+    height: 18vw;
+    border-radius: 100%;
+    border: #99C98A solid 4px;
+}
+
+.heroSection p {
+    font-size: 2.4vw;
+    padding-left: 3vw;
+    color: #C5C4EC;
+}
+
+.sectionTitle {
+    color: #99C98A;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.projectsSection {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+.projectDiv {
+    width: 30vw;
+    height: 26.3vw;
+    background-color: #232323;
+    margin-bottom: 2vw;
+}
+
+.projectDiv img {
+    width: 30vw;
+    height: 60%;
+}
+
+.gameSpecs {
+    width: 30vw;
+    height: 2.4vw;
+    background-color: #232323;
+    opacity: 0.8;
+    margin-top: -2.6vw;
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+
+}
+
+.gameSpecs img {
+    width: 1vw;
+    height: 1vw;
+    margin: 0.5vw 0.6vw 0.6vw 1.2vw;
+
+}
+
+.gameSpecs p {
+    font-size: 1vw;
+}
+
+.projectDiv h1 {
+    font-size: 1.6vw;
+    padding: 0 1.2vw;
+    color: #9B98EA;
+    margin-top: 1vw;
+    margin-bottom: -0.6vw;
+}
+
+.projectDescr {
+    font-size: 1.2vw;
+    padding: 0 1.2vw;
+}
+
+.divLink {
+    text-decoration: none;
+}
+
+.backButton {
+    text-decoration: none;
+    color: #9B98EA;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.projectPageHeroImage {
+    max-width: 63.5vw;
+    display: block;
+}
+
+.experienceSection {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+.experienceDiv {
+    width: 30vw;
+    height: 12vw;
+    background-color: #232323;
+    margin-bottom: 2vw;
+}
+
+.experienceDiv h1 {
+    font-size: 1.6vw;
+    padding: 0 1.2vw;
+    color: #9B98EA;
+    display: flex;
+    align-items: center;
+}
+
+.experienceDiv img {
+    width: 3.7vw;
+    margin-right: 1vw;
+}
+
+.experienceDiv p {
+    font-size: 1.2vw;
+    margin: 0 1vw;
+}
+
+.aboutMeSection p {
+    font-size: 1.2vw;
+}
+
+.gameDescSection {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+.gameDescDiv {
+    width: 30.5vw;
+    height: 14vw;
+    background-color: #232323;
+    margin-bottom: 2vw;
+}
+
+.gameDescDiv p {
+    font-size: 1vw;
+    margin: 0 1vw;
+}
+
+.gameDescDiv h1 {
+    font-size: 1.6vw;
+    padding: 1vw 1.2vw 0;
+    color: #e3e3e3;
+    display: flex;
+    align-items: center;
+}
+
+.projectExplanation h1 {
+    font-size: 1.4vw;
+    color: #e3e3e3;
+    margin: 0;
+}
+
+.projectExplanation p {
+    font-size: 1vw;
+}
+
+.projectExplanation div {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+.projectExplanation div p {
+    margin: 0.4vw 0 1.4vw;
+    font-style: italic;
+    font-size: 0.8vw;
+}
+
+.projectExplanation img {
+    width: 30.5vw;
+    height: 17.156vw;
+}
+
+.skills {
+    display: flex;
+}
+
+.skills p {
+    font-size: 1.2vw;
+    border: #9B98EA 2px solid;
+    padding: 0.4vw 0.5vw;
+    margin-right: 8px;
+    border-radius: 0.6vw;
+}
+
+/*TABLET VIEW*/
+@media screen and (max-width: 1200px) {
+    body {
+        padding: 0 10vw;
+    }
+
+    .logoHeader {
+        font-size: 56px;
+        margin-top: -20px;
+
+    }
+
+    .heroSection img {
+        /*Profile photo*/
+        max-width: 18vw;
+        max-height: 18vw;
+
+    }
+
+    .heroSection p {
+        /*About text*/
+        font-size: 3vw;
+        padding-left: 3vw;
+    }
+
+    .projectDiv {
+        width: 38vw;
+        height: 33.3vw;
+        background-color: #232323;
+    }
+
+    .projectDiv img {
+        width: 38vw;
+    }
+
+    .gameSpecs {
+        width: 38vw;
+    }
+
+    .gameSpecs img {
+        /*Small icon*/
+        width: 1vw;
+        height: 1vw;
+    }
+
+    .projectDiv h1 {
+        font-size: 2vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+    }
+
+    .projectDescr {
+        font-size: 1.5vw;
+    }
+
+    .projectPageHeroImage {
+        max-width: 80vw;
+    }
+
+    .experienceDiv {
+        width: 38vw;
+        height: 15.1vw;
+    }
+
+    .experienceDiv h1 {
+        font-size: 2vw;
+    }
+
+    .experienceDiv p {
+        font-size: 1.5vw;
+    }
+
+    .aboutMeSection p {
+        font-size: 1.5vw;
+    }
+
+    .gameDescDiv {
+        width: 38vw;
+        height: 24vw;
+        margin-bottom: 2vw;
+    }
+
+    .gameDescDiv p {
+        font-size: 1.6vw;
+        margin: 0 1vw;
+    }
+
+    .gameDescDiv h1 {
+        font-size: 2.2vw;
+        padding: 0vw 1.2vw 0;
+    }
+
+    .projectExplanation h1 {
+        font-size: 2.2vw;
+    }
+    
+    .projectExplanation p {
+        font-size: 1.6vw;
+    }
+    
+    .projectExplanation div p {
+        font-size: 1vw;
+    }
+    
+    .projectExplanation img {
+        width: 38vw;
+        height: 21.375vw;
+    }
+    .skills p {
+        font-size: 1.6vw;
+        border: #9B98EA 2px solid;
+        padding: 0.4vw 0.5vw;
+        margin-right: 8px;
+        border-radius: 0.6vw;
+    }
+}
+
+/*PHONE VIEW*/
+@media screen and (max-width: 700px) {
+    body {
+        padding: 0 3vw;
+    }
+
+    header {
+        display: block;
+        padding-top: 10px;
+    }
+
+    .logoHeader {
+        font-size: 42px;
+        margin-top: 0;
+
+    }
+
+    .heroSection {
+        display: block;
+    }
+
+    .heroSection img {
+        /*Profile photo*/
+        margin: auto;
+        display: flex;
+        min-width: 254px;
+        min-height: 254px;
+        margin-bottom: 20px;
+    }
+
+    .heroSection p {
+        /*Profile photo*/
+        margin: auto;
+        display: flex;
+        font-size: 24px;
+        padding: 0;
+    }
+
+    .sectionTitle {
+        font-size: 24px;
+    }
+
+    .projectsSection {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 1em;
+        justify-content: space-between;
+    }
+
+    .projectDiv {
+        width: 91vw;
+        height: 79vw;
+    }
+
+    .projectDiv img {
+        width: 100%;
+    }
+
+    .gameSpecs {
+        width: 91vw;
+        height: 5.3vw;
+        margin-top: -5.8vw;
+    }
+
+    .gameSpecs img {
+        width: 2.4vw;
+        height: 2.4vw;
+        margin: 0.5vw 1.2vw 0.6vw 4vw;
+    }
+
+    .gameSpecs p {
+        font-size: 2.4vw;
+    }
+
+    .projectDiv h1 {
+        font-size: 4.6vw;
+        margin-top: 2.4vw;
+        padding: 0 4vw;
+    }
+
+    .projectDescr {
+        font-size: 3.4vw;
+        padding: 0 4vw;
+    }
+
+    .backButton {
+        margin-top: 30px;
+        display: flex;
+    }
+
+    .projectPageHeroImage {
+        max-width: 91vw;
+    }
+
+    .experienceSection {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 1em;
+        justify-content: space-between;
+    }
+
+    .experienceDiv {
+        width: 91vw;
+        height: 36.1vw;
+    }
+
+    .experienceDiv h1 {
+        font-size: 4.6vw;
+        padding: 0 4vw;
+    }
+
+    .experienceDiv img {
+        width: 10vw;
+        margin-right: 3vw;
+    }
+
+    .experienceDiv p {
+        font-size: 3.4vw;
+        padding: 0 4vw;
+        margin: 0;
+    }
+
+    .aboutMeSection p {
+        font-size: 3.4vw;
+    }
+
+    .gameDescSection {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 1em;
+        justify-content: space-between;
+    }
+
+    .gameDescDiv {
+        width: 91vw;
+        height: 36.1vw;
+    }
+
+    .gameDescDiv h1 {
+        font-size: 4vw;
+        padding: 0 4vw;
+    }
+
+    .gameDescDiv p {
+        font-size: 3vw;
+        padding: 0 4vw;
+        margin: 0;
+    }
+    .projectExplanation div {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 1em;
+        justify-content: space-between;
+    }
+    .projectExplanation h1 {
+        font-size: 4vw;
+        margin-top: 3vw;
+    }
+    
+    .projectExplanation p {
+        font-size: 3.2vw;
+    }
+    
+    .projectExplanation div p {
+        font-size: 2.4vw;
+        margin-top: -1.8vw;
+    }
+    
+    .projectExplanation img {
+        width: 91vw;
+        height: 51.187vw;
+    }
+
+    .skills p {
+        font-size: 3.4vw;
+        padding: 0.8vw 1vw;
+        border-radius: 1vw;
+    }
+}
