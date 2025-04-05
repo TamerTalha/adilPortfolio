@@ -49,8 +49,35 @@ header {
     padding: 10px;
     color: #F3F3F3;
     background-color: #9B98EA;
+    border: #9B98EA 2px solid;
     text-decoration: none;
     border-radius: 6px;
+    transition: 0.4s;
+
+}
+.dropdown{
+    max-width: fit-content;
+    display: inline-block;
+    cursor: pointer;
+}
+.dropdown a{
+    display: flex;
+}
+.socialLinks a:hover {
+    background-color: #121212;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding-top: 4px;
+    gap: 4px;
+    z-index: 1;
+  }
+  
+.dropdown:hover .dropdown-content {
+    display: flex;
+    margin: auto;
 }
 
 .heroSection {
